@@ -1,0 +1,16 @@
+let a = window.document;
+alert('hello guys');
+a = prompt('This will destroy your computer. Type your name');
+console.log(a); 
+a = confirm('Are you sure you want to delete this page?');
+console.log(a); 
+a = window.innerHeight;
+console.log(a); 
+a = innerWidth;
+console.log(a); 
+a = scrollY;
+console.log(a); 
+a = location.toString();
+console.log(a); 
+a = window.history;
+console.log(a);          
