@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        h1{
+            font-size: 50px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        div{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Variables: let, const & var in JavaScript</h1>
+    <h2>Rules for creating Variables:</h2> 
+    <div>
+        <ul>
+            <li>Cannot start with numbers</li>
+            <li>Can start with letter, _ & $</li>
+            <li>Are case sensitive</li>
+        </ul>
+    </div>
+    <h2>Var And Const</h2>
+    <div>
+        Var can be modified while const is not. <br>
+        Eg: <br> <br>
+        var name = 'Riya'; <br>
+        name = 'Riya Gaur';&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->Allowed<br> <br>
+
+        const headname = 'Riya'; <br>
+        headname = 'Riya Gaur';&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->Not Allowed<br>
+        <br><br><br>
+        const arr=[12,23,53,3]; <br>
+        console.log(arr); <br>
+        arr.push(43); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->Allowed<br> 
+        console.log(arr); <br>
+        arr=[11,12,13]; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->Not Allowed <br>
+    </div>
+    <h2>Let </h2>
+    <div>
+        Variables declared with the let keyword can have Block Scope. <br> <br>
+
+        Variables declared inside a block {} cannot be accessed from outside the block. <br><br>
+        Eg: <br><br>
+        var city = 'Mathura'; <br>
+        { <br>
+            &nbsp; &nbsp;&nbsp;&nbsp;let city = 'Kolkata'; <br>
+        } <br> <br>
+        If we print the city outside the block then it will print 'Mathura' and if we print inside the block then it will print 'Kolkata'. <br>
+    </div>
+    <h2>Most common Programming case types:</h2>
+    <div>
+        <ol>
+            <li>camelCase</li>
+            <li>kebab-case</li>
+            <li>snake_case</li>
+            <li>PascalCase</li>
+        </ol>
+    </div>
+</body>
+<script src="JS/02_Variable.js"></script>
+</html>
