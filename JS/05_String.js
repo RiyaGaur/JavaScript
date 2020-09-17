@@ -36,4 +36,4 @@ let myHtml = `Hello ${name}
             <p> You like ${fruit1} and ${fruit2}
 `;
 
-document.body.innerHTML = myHtml; 
+//document.body.innerHTML = myHtml; 
