@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        h1{
+            font-size: 50px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        div{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local And Session Storage</h1> 
+    <div style="text-align: center;">
+        The localStorage and sessionStorage properties allow to save key/value pairs in a web browser. 
+    </div>
+    <h2>Local Storage</h2>
+    <div>
+        The localStorage object stores data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. <br><br>
+    </div>
+    <div>
+        <b>Syntax:</b>
+        window.localStorage <br><br>
+   
+        <b>Syntax for SAVING data to localStorage:</b>
+        localStorage.setItem("key", "value"); <br> <br>
+
+        <b>Syntax for READING data from localStorage:</b>
+        var lastname = localStorage.getItem("key"); <br><br>
+
+        <b>Syntax for REMOVING data from localStorage:</b>
+        localStorage.removeItem("key"); <br><br>
+    </div>
+    <h2>Session Storage</h2>
+    <div>
+        The sessionStorage object stores data for only one session (the data is deleted when the browser tab is closed). <br><br>
+    </div>
+    <div>
+        <b>Syntax:</b>
+        window.sessionStorage <br><br>
+
+        <b>Syntax for SAVING data to sessionStorage:</b>
+        sessionStorage.setItem("key", "value");<br><br>
+        
+        <b>Syntax for READING data from sessionStorage:</b>
+        var lastname = sessionStorage.getItem("key"); <br><br>
+
+        <b>Syntax for REMOVING saved data from sessionStorage:</b>
+        sessionStorage.removeItem("key"); <br><br>
+        
+        <b>Syntax for REMOVING ALL saved data from sessionStorage:</b>
+        sessionStorage.clear(); <br><br>
+    </div>
+</body>
+
+<script src="JS/17_Local & Session storage.js"></script>
+</html>
