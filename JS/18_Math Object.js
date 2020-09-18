@@ -1,4 +1,3 @@
-console.log("Welcome to tutorial number 23");
 let x = 3;
 let y = 6;
 let z;
