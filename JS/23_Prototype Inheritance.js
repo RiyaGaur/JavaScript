@@ -1,5 +1,3 @@
-console.log("This is tutorial 30");
-
 const proto = {
     slogan: function () {
         return `This company is the best`;
@@ -9,20 +7,20 @@ const proto = {
     }
 }
 
-// This creates harry object
-let harry = Object.create(proto);
-harry.name = "harry";
-harry.role = "Programmer";
-harry.changeName("Harry2")
-console.log(harry)
+// This creates Riya object
+let Riya = Object.create(proto);
+Riya.name = "Riya";
+Riya.role = "Programmer";
+Riya.changeName("Riya2")
+console.log(Riya)
 
-// This also creates harry object
-const harry1 = Object.create(proto, {
-    name: { value: "harry", writable: true },
+// This also creates Riya object
+const Riya1 = Object.create(proto, {
+    name: { value: "Riya", writable: true },
     role: { value: "Programmer" },
 });
-harry1.changeName("Harry2")
-// console.log(harry1)
+Riya1.changeName("Riya2")
+// console.log(Riya1)
 
 
 // Employee constructor
@@ -38,8 +36,8 @@ Employee.prototype.slogan = function () {
 }
 
 // Create an object from this constructor now
-let harryObj = new Employee("Harry", 345099, 87);
-console.log(harryObj.slogan())
+let RiyaObj = new Employee("Riya", 345099, 87);
+console.log(RiyaObj.slogan())
 
 // Programmer
 function Programmer(name, salary, experience, language) {
