@@ -1,5 +1,3 @@
-console.log("This is tutorial 37");
-
 // Pretend that this response is coming from the server
 const students = [
     {name: "Riya", subject: "JavaScript"},
@@ -29,4 +27,3 @@ function getStudents(){
 let newStudent = {name:"Khushi", subject:"Python"}
 enrollStudent(newStudent, getStudents);
 // getStudents();
-
