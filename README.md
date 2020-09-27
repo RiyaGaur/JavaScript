@@ -1,3 +1,4 @@
 # JavaScript
 
 ## console.log
+## variables
